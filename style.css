@@ -1,0 +1,292 @@
+:root {
+    --cor-azul: #6BB4DD;
+    --cor-azul-claro: #6BDDDD;
+    --cor-branco: #F5F5F5;
+    --cor-preto: #000000;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+    max-width: 100%; /*largura da parte de cima/login - chat */
+    max-height: 75%; /*aultura da parte login- chat */
+    margin: 0;
+}
+
+.btn {
+    align-items: center;
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #F5F5F5;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 60px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn.azul {
+    background-color: var(--cor-azul);
+}
+
+/* Header */
+header {
+    background: linear-gradient(180deg, var(#6BB4DD) 250px, var(#6BB4DD) 40px);
+    height: 100vh;
+    width: 100%;
+    background-color: var(#fff);
+}
+
+/* Parte de cima "Meu Pet 7L" cor */
+/* Letras e imagens parte de cima */
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #6BB4DD;
+}
+
+/* "Meu Pet 7L" */
+nav .logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    color: var(--cor-azul-claro);
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 157px;
+    list-style: none;
+}
+
+/* Letras "Login" */
+nav ul li a {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+/*meu pet 7l cachorro */
+
+.cachorro {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.cachorro img {
+    margin-right: 500px; /* Adiciona espaço entre a imagem e o texto */
+    left: 50;
+}
+
+.cachorro div {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+.cachorro h1{
+font-weight: bold;
+font-size: 100px;
+color:#6BDDDD ;
+}
+
+.cachorro h3{
+font-weight: bold;
+font-size: 50px;
+color: #000000;
+}
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.hero-section ul {
+    display: flex;
+    align-items: flex-end;
+    gap: 170px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.hero-section ul li a {
+    font-family: "Roboto", sans-serif;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 35px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+/* Imagens "Sobre Nós" */
+.hero-section ul li img {
+    align-items: center;
+    width: 450px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    gap: 150px;
+    margin: 0;
+}
+
+/*inicio vacinas */
+.vacinas-container{
+    background-color: #6BB4DD;
+height: 20vh;
+}
+
+/* TEXTO VACINAS */
+.vacinas {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente ao longo do eixo principal */
+    align-items: center;
+}
+
+.vacinas .left {
+    margin-right: auto; /* Move o título para a esquerda */
+}
+
+.vacinas .right {
+    margin-left: auto; /* Move o título para a direita */
+}
+
+.vacinas h1 {
+    margin: 0;
+    background-color: #fff;
+    font-size: 70px;
+}
+
+.vacinas p {
+    margin: 10px 0 0; /* Adiciona margem apenas na parte superior do parágrafo */
+    background-color: #fff;
+    font-size: 40px;
+}
+
+/* TEXTO DE INFORMAÇAO VACINAS*/
+
+
+/*TEXTO VACINAS E IMAGEM */
+.titulo {
+    display: flex; 
+    align-items: center; 
+}
+
+/* DISTANCIA IMAGEM  */
+.titulo .left {
+    margin-right: 100px; 
+    margin-left: 50px;
+    font-size:  100px; 
+}
+
+.titulo .right {
+    flex:1; /* Permite que o texto ocupe o restante do espaço disponível */
+
+}
+/* TEXTO VACINAS */
+.titulo h1 {
+    max-height: 200%; /*aultura da parte login- chat */
+    margin: 0; 
+    background-color:#fff;
+    font-size: 50px;
+}
+/*final vacinas */
+
+/* inicio gato */
+.gato {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.gato img {
+    margin-left: auto; /* Adiciona espaço entre a imagem e o texto */
+    margin-right: 20px; /* Move a imagem para a direita */
+}
+
+.gato div {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+.gato h1 {
+    margin-left: 1500px;
+    font-weight: bold;
+    font-size: 100px;
+    color: #6BDDDD;
+}
+
+.gato h3 {
+    margin-left: 1000px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000;
+}
+/*final gato*/
+
+/*inicio consulta texto e iamgem */
+.consultas {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.consultas img {
+    margin-right: 20px; /* Adiciona espaço entre a imagem e o texto */
+    order: 1; /* Altera a ordem da imagem para que apareça antes do texto */
+}
+
+.consultas h3 {
+    margin-left: 1000; /* Move o texto para a direita */
+    order: 2; /* Mantém a ordem do texto depois da imagem */
+    font-weight: bold;
+    font-size: 50px;
+    background-color: #6BB4DD;
+    color: #000000;
+}
+
+/*final consulta imagem e texto */
+
+/*inicio maarcar consultas e imagem */
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.achievement-card-consulta-esquerda {
+    display: flex;
+    align-items: flex-start;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.left img {
+    max-width: 100%;
+    margin-left: 900px;
+}
+
+.left h3 {
+    margin: 0; 
+    font-size: 50px; 
+}
+
